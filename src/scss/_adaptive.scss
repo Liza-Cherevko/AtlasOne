@@ -1,0 +1,166 @@
+// 992px - 1450px
+
+@media (min-width:$breakpoint992) and (max-width: $breakpoint1450){
+ .hero__img{
+  width: 630px;
+
+ }
+    header{
+        .logo{
+            img{
+                width: 193px;
+            }
+        }
+       .menu{
+            gap: 25px;
+            margin-left: 40px;
+            &__item-link{
+                font-size: 14px; 
+            }
+        }
+        .nav__btns{
+            .btn{
+               font-size: 16px;
+            }
+        }
+      }
+      .hero{
+        &__item{
+       
+          max-width: 350px;
+      }
+        &__title{
+          font-size: 14px;
+          line-height: 20px; 
+      }
+      &__subtitle{
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 119%;
+    }
+    &__btns{
+      display: flex;
+      gap: 20px;
+      .btn{
+          padding: 15px 0px;
+      }
+  }
+  &__btn{
+    display: flex;
+    flex: 1 1 auto;
+  
+  }
+      }
+}
+
+// 768px - 991px
+@media (min-width:$breakpoint768) and (max-width: $breakpoint992) {
+  .hero__img{
+    width: 100%;
+  
+   }
+   .hero{
+    &__item{
+      padding-top: 0;
+      margin: 150px auto;
+       max-width: 450px;
+       padding: 10px 10px 0 0;
+       background-color: rgb(242, 242, 242);
+    }
+    &__title{
+      font-size: 14px;
+      line-height: 20px; 
+  }
+  &__subtitle{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 119%;
+}
+&__btns{
+  display: flex;
+  gap: 20px;
+  .btn{
+      padding: 15px 0px;
+  }
+}
+&__btn{
+display: flex;
+flex: 1 1 auto;
+
+}
+   }
+    header{
+        .logo{
+            img{
+                width: 196px;
+            }
+        }
+       }
+
+       .nav{
+        &__btns{
+           .btn{
+            display: none;
+           }
+        }
+    }
+    .menu{
+        margin-left: 0;
+        &__item {
+            position: relative;
+            padding: 17px 0;
+            flex-grow: 1;
+              a{
+                img{
+                  position: absolute;
+                  top: 6px;
+                  right: -19px;
+                }
+              }
+    }
+}
+    .navbar{
+        justify-content: end;
+    }
+    
+    .container {
+      width: 750px !important;
+    }
+  
+    body,
+    section,
+    footer {
+      width: 100% !important;
+      overflow-x: hidden;
+    }
+  
+}
+  
+  @media (min-width: 576px) and (max-width: 767px) {
+
+  }
+  
+  // 0px - 767px
+  @media (max-width: 767px) {
+
+  
+    .container {
+      width: 320px !important;
+    }
+  
+    body,
+    section,
+    footer {
+      width: 100% !important;
+      overflow-x: hidden;
+    }
+  }
+  
+  @media (max-width: 320px) {
+  
+    header, 
+    section,
+    footer {
+      width: 320px !important;
+    }
+  }
